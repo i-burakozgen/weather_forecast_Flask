@@ -1,2 +1,2 @@
 # weather_forecast_Flask
-Weather forecast app with Flask
+Weather forecast app using openweather free api with Flask.
