@@ -1,0 +1,12 @@
+
+    {% extends "index.html" %}
+    {%block content%}
+        <div>
+            <h2>Weather in {{data_obj.title_city}}</h2>
+            <p>Temperature is <strong>{{data_obj.temp}}°C</strong> </p>
+            <p>Feels like <strong>{{data_obj.temp_feels}}°C  and {{data_obj.weather_description}}</strong></p>
+            <p>Minimum Temperature is <strong>{{data_obj.temp_min}}°C </strong></p>
+            <p>Maximum Temperature is <strong>{{data_obj.temp_max}}°C </strong></p>
+
+        </div>
+    {%endblock content%}
