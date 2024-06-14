@@ -10,6 +10,12 @@
         <h1>Weather Conditions</h1>
         <form action="/weather">
             <input type="text" name="city" id="city" placeholder="enter a city"/>
+            <select name="units">
+                <option value="metric">Metric</option>
+                <option value="imperial">Imperial</option>
+                <option value="standard">Standard</option>
+            </select>
+
             <button type="submit" id="submit">Submit</button>
         </form>
         {%block content%}
@@ -17,4 +23,4 @@
         {%endblock%}       
     </body>
 
-</html
+</html>

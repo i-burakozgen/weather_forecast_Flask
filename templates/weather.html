@@ -3,10 +3,10 @@
     {%block content%}
         <div>
             <h2>Weather in {{data_obj.title_city}}</h2>
-            <p>Temperature is <strong>{{data_obj.temp}}°C</strong> </p>
-            <p>Feels like <strong>{{data_obj.temp_feels}}°C  and {{data_obj.weather_description}}</strong></p>
-            <p>Minimum Temperature is <strong>{{data_obj.temp_min}}°C </strong></p>
-            <p>Maximum Temperature is <strong>{{data_obj.temp_max}}°C </strong></p>
+            <p>Temperature is <strong>{{temp_obj.temp_main}}{{temp_obj.temp_units}}</strong> </p>
+            <p>Feels like <strong>{{temp_obj.temp_feels}}{{temp_obj.temp_units}}  and {{data_obj.weather_description}}</strong></p>
+            <p>Minimum Temperature is <strong>{{temp_obj.temp_main_min}}{{temp_obj.temp_units}} </strong></p>
+            <p>Maximum Temperature is <strong>{{temp_obj.temp_main_max}}{{temp_obj.temp_units}} </strong></p>
 
         </div>
     {%endblock content%}
